@@ -10,7 +10,6 @@ import Foundation
 protocol CredentialsInterface {
     var email: String? { get set }
     var password: String? { get set }
-    var message: String? {get set}
     
     func validate() -> Bool
 }

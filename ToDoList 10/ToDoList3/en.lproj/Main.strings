@@ -1,0 +1,42 @@
+
+/* Class = "UIButton"; configuration.title = "Registration"; ObjectID = "0v6-cJ-OeO"; */
+"0v6-cJ-OeO.configuration.title" = "Registration";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0v6-cJ-OeO"; */
+"0v6-cJ-OeO.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Enter yours email"; ObjectID = "2ca-UR-CRz"; */
+"2ca-UR-CRz.placeholder" = "Enter yours email";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "3fU-i3-XJH"; */
+"3fU-i3-XJH.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3fU-i3-XJH"; */
+"3fU-i3-XJH.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "ToDoList"; ObjectID = "51g-UD-k1U"; */
+"51g-UD-k1U.text" = "ToDoList";
+
+/* Class = "UITextField"; placeholder = "Enter yous password"; ObjectID = "9Se-VA-3XS"; */
+"9Se-VA-3XS.placeholder" = "Enter yous password";
+
+/* Class = "UIButton"; configuration.title = "Registration"; ObjectID = "D8L-vS-HYa"; */
+"D8L-vS-HYa.configuration.title" = "Registration";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "D8L-vS-HYa"; */
+"D8L-vS-HYa.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Create"; ObjectID = "Dkj-ZK-ZN9"; */
+"Dkj-ZK-ZN9.configuration.title" = "Create";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Dkj-ZK-ZN9"; */
+"Dkj-ZK-ZN9.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Enter yours email"; ObjectID = "EBU-dT-4dD"; */
+"EBU-dT-4dD.placeholder" = "Enter yours email";
+
+/* Class = "UITextField"; placeholder = "Enter yous password"; ObjectID = "N0y-hD-dvm"; */
+"N0y-hD-dvm.placeholder" = "Enter yous password";
+
+/* Class = "UILabel"; text = "Registration"; ObjectID = "pm4-TN-l9S"; */
+"pm4-TN-l9S.text" = "Registration";

@@ -27,12 +27,7 @@ class RegistrationViewController: BaseViewController {
     
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        let credentials = Credentials()
-        credentials.email = txtEmail.text
-        credentials.password = txtPassword.text
-        
-        
-        return credentials.validate()
-    }
+           return Credentials(email: txtEmail.text, password: txtPassword.text).validate()
+       }
 
 }

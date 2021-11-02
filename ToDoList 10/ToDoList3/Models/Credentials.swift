@@ -10,7 +10,12 @@ import Foundation
 class Credentials: CredentialsInterface {
     var email: String?
     var password: String?
-    var message: String? = ""
+    
+    init(email: String?, password: String?) {
+            self.email = email
+            self.password = password
+        
+        }
    
     
     func validate() -> Bool {
@@ -34,37 +39,14 @@ class Credentials: CredentialsInterface {
 }
 
 class LoginCredentials: Credentials {
-    let expectedEmail: String = "test@gmail.com"
-    let expectedPassword: String = "123456789"
+    private var expectedEmail: String = "test@gmail.com"
+    private var expectedPassword: String = "123456789"
     
-    func returnMessage() -> String {
-        if let email = self.email,
-                   let password = self.password {
-                    
-                    if email.contains("@") {
-                        if password.count > 8 {
-                            if email == expectedEmail {
-                                if password == expectedPassword {
-                                    message = "Success"
-                                } else {
-                                   message = "Fail: wrong password"
-                                }
-                            } else {
-                                message =  "Fail: wrong email"
-                            }
-                        } else {
-                            message = "Fail: password must be at least 8 symbols"
-                        }
-                    } else {
-                       message = "Fail: wrong email format"
-                    }
-                } else {
-                   message =  "Fail: empty fields"
-                }
-                return message!
-            }
+    override init(email: String?, password: String?) {
+        super.init(email: email, password: password)
+    }
     
-    
+   
    
     override func validate() -> Bool {
         let isValid = super.validate()

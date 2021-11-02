@@ -45,21 +45,17 @@ class LoginViewController: BaseViewController, Base {
     
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+            if identifier != "fromLoginToTaskList" {
+                return true
+            }
+            
+            return LoginCredentials(email: txtEmail.text, password: txtPassword.text).validate()
+            
         
-        if identifier != "fromLoginToTaskList"{
-            return true
         }
-        
-        let credentials = LoginCredentials()
-        credentials.email = txtEmail.text
-        credentials.password = txtPassword.text
-        
-        MessageLabel.text = credentials.returnMessage()
-        
-        return credentials.validate()
-        
-        
-    }
+    
+    
+   
     
   
 }
