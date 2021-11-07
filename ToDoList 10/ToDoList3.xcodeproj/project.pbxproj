@@ -28,6 +28,7 @@
 		3FC15D8627234A2F00261F16 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC15D8527234A2F00261F16 /* CustomView.swift */; };
 		3FC15D8827234A5E00261F16 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC15D8727234A5E00261F16 /* CustomView.xib */; };
 		3FC15D8B27234D3700261F16 /* BaseColorButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC15D8A27234D3700261F16 /* BaseColorButtonView.swift */; };
+		3FDAA86027385B8100604A1B /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAA85F27385B8100604A1B /* TaskController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		3FC15D8727234A5E00261F16 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		3FC15D8A27234D3700261F16 /* BaseColorButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseColorButtonView.swift; sourceTree = "<group>"; };
 		3FDAA85E2731C7E900604A1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3FDAA85F27385B8100604A1B /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				3F66B279272F201900552F68 /* CredentialValidation.swift */,
+				3FDAA85F27385B8100604A1B /* TaskController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				3FC15D7F2722D83E00261F16 /* RoundedButtonStyle.swift in Sources */,
 				3F6D2394272B33620091983D /* TaskViewController.swift in Sources */,
 				3F66B27C272F23B200552F68 /* Task.swift in Sources */,
+				3FDAA86027385B8100604A1B /* TaskController.swift in Sources */,
 				3F6D2392272B109D0091983D /* TaskListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

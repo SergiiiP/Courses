@@ -7,9 +7,11 @@
 
 import Foundation
 
-struct Task{
+struct Task {
     var title: String?
     var description: String?
-    var taskDate: String?
-    var status: String?
+    var taskDate: Date
+    var createdDate: Date
+    var status: String
 }
+
