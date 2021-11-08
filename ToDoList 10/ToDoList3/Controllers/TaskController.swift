@@ -55,7 +55,22 @@ class TaskController{
         return tasks
     }
     
+    func sortByTaskDateNewest() -> [Task] {
+        tasks.sort { task1, task2 in
+            task1.taskDate < task2.taskDate
+        }
+        
+        return tasks
+    }
+    
+    func sortByTaskDateOldest() -> [Task] {
+        tasks.sort { task1, task2 in
+            task1.taskDate > task2.taskDate
+        }
+        
+        return tasks
+    }
     
     
-    
+
 }
