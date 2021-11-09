@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1B485B273B0A4E001FE75F /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B4859273B0A4E001FE75F /* TaskTableViewCell.swift */; };
+		3F1B485C273B0A4E001FE75F /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1B485A273B0A4E001FE75F /* TaskTableViewCell.xib */; };
 		3F66B276272F0E0900552F68 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F66B275272F0E0900552F68 /* Credentials.swift */; };
 		3F66B27A272F201900552F68 /* CredentialValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F66B279272F201900552F68 /* CredentialValidation.swift */; };
 		3F66B27C272F23B200552F68 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F66B27B272F23B200552F68 /* Task.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F1B4859273B0A4E001FE75F /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		3F1B485A273B0A4E001FE75F /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		3F66B275272F0E0900552F68 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		3F66B279272F201900552F68 /* CredentialValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialValidation.swift; sourceTree = "<group>"; };
 		3F66B27B272F23B200552F68 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -103,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F398EBD273AE2F200ADE537 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				3F1B4859273B0A4E001FE75F /* TaskTableViewCell.swift */,
+				3F1B485A273B0A4E001FE75F /* TaskTableViewCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
 		3F66B274272F0DC800552F68 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +193,7 @@
 		3FC15D712721E98C00261F16 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F398EBD273AE2F200ADE537 /* TableCells */,
 				3FC15D762721EAAF00261F16 /* BaseViewController.swift */,
 				3FC15D782721EAD300261F16 /* RegistrationViewController.swift */,
 				3FC15D7A2721EAE600261F16 /* LoginViewController.swift */,
@@ -347,6 +361,7 @@
 				3FC15D8827234A5E00261F16 /* CustomView.xib in Resources */,
 				3FC15D4B2721E97600261F16 /* Assets.xcassets in Resources */,
 				3FC15D492721E97500261F16 /* Main.storyboard in Resources */,
+				3F1B485C273B0A4E001FE75F /* TaskTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +394,7 @@
 				3FC15D422721E97500261F16 /* AppDelegate.swift in Sources */,
 				3FC15D8B27234D3700261F16 /* BaseColorButtonView.swift in Sources */,
 				3F66B276272F0E0900552F68 /* Credentials.swift in Sources */,
+				3F1B485B273B0A4E001FE75F /* TaskTableViewCell.swift in Sources */,
 				3FC15D442721E97500261F16 /* SceneDelegate.swift in Sources */,
 				3FC15D792721EAD300261F16 /* RegistrationViewController.swift in Sources */,
 				3FC15D7F2722D83E00261F16 /* RoundedButtonStyle.swift in Sources */,

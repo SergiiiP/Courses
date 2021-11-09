@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ToDoList3
 //
-//  Created by Name on 21.10.2021.
+//  Created by Name on 21.10.2021.∑
 //
 
 import UIKit

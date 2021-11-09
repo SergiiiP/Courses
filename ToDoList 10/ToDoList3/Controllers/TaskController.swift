@@ -21,6 +21,13 @@ class TaskController{
         Task.init(title: "Run", description: "Description10", taskDate: Date(), createdDate: Date(), status: "Progress"),
     ]
     
+    func tasksCount() -> Int {
+        return tasks.count
+    }
+    
+    func task(by index: Int) -> Task {
+        return tasks[index]
+    }
     
     
     func search(by title: String) -> [Task] {
@@ -69,6 +76,10 @@ class TaskController{
         }
         
         return tasks
+    }
+    
+    func remove(by index: Int) {
+        tasks.remove(at: index)
     }
     
     
