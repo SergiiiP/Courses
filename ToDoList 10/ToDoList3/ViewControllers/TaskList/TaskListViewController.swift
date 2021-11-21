@@ -18,6 +18,10 @@ class TaskListViewController: BaseViewController, UITableViewDataSource, UITable
 
         navigationController?.navigationBar.isHidden = true
         
+        prepareTableView()
+    }
+    
+    func prepareTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -32,7 +36,7 @@ class TaskListViewController: BaseViewController, UITableViewDataSource, UITable
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskTableViewCell
         
-        cell.titleLabel.text = taskController.task(by: indexPath.row).title
+        cell.fill(with: taskController.task(by: indexPath.row))
         
         return cell
     }

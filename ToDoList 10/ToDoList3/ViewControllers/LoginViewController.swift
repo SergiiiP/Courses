@@ -24,9 +24,6 @@ class LoginViewController: BaseViewController, Base {
     
     @IBOutlet weak var MessageLabel: UILabel!
     
-    let expectedEmail: String = "test@gmail.com"
-    let expectedPassword: String = "1234qwer5"
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,11 +42,14 @@ class LoginViewController: BaseViewController, Base {
     
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
             if identifier != "fromLoginToTaskList" {
                 return true
             }
-            
-            return LoginCredentials(email: txtEmail.text, password: txtPassword.text).validate()
+        
+        let credentialController = CredentialsController(credentials: Credentials(email: txtEmail.text, password: txtPassword.text))
+        
+        return credentialController.validate() && credentialController.checkCredentials()
             
         
         }
