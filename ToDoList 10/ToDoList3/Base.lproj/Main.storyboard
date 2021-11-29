@@ -220,19 +220,65 @@
                     <view key="view" contentMode="scaleToFill" id="nVZ-qi-p63">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Opo-bs-pbJ" userLabel="UITextField">
+                                <rect key="frame" x="41" y="44" width="326" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CcP-WF-CzD" userLabel="descriptionTextView">
+                                <rect key="frame" x="41" y="115" width="326" height="593"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. </string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="https://www.google.com">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Times-Roman"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="A6r-90-6hx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A6r-90-6hx" firstAttribute="bottom" secondItem="CcP-WF-CzD" secondAttribute="bottom" constant="100" id="8Xn-AE-IdO"/>
+                            <constraint firstItem="Opo-bs-pbJ" firstAttribute="top" secondItem="A6r-90-6hx" secondAttribute="top" constant="44" id="cA6-X2-EtQ"/>
+                            <constraint firstItem="A6r-90-6hx" firstAttribute="trailing" secondItem="CcP-WF-CzD" secondAttribute="trailing" constant="47" id="cs8-Rd-PVG"/>
+                            <constraint firstItem="Opo-bs-pbJ" firstAttribute="leading" secondItem="A6r-90-6hx" secondAttribute="leading" constant="41" id="kwp-OY-f4q"/>
+                            <constraint firstItem="CcP-WF-CzD" firstAttribute="leading" secondItem="A6r-90-6hx" secondAttribute="leading" constant="41" id="obg-U3-bl7"/>
+                            <constraint firstItem="CcP-WF-CzD" firstAttribute="top" secondItem="Opo-bs-pbJ" secondAttribute="bottom" constant="37" id="v47-CF-n1W"/>
+                            <constraint firstItem="A6r-90-6hx" firstAttribute="trailing" secondItem="Opo-bs-pbJ" secondAttribute="trailing" constant="47" id="yqt-AT-Ka8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="CcP-WF-CzD" id="Wrr-PM-Jkj"/>
+                        <outlet property="titleTextField" destination="Opo-bs-pbJ" id="cnX-sX-PYL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izk-DW-Kih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122" y="828"/>
+            <point key="canvasLocation" x="2121.739130434783" y="827.67857142857144"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="2WB-jF-ke8"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
