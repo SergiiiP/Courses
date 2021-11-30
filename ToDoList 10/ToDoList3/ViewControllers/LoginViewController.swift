@@ -22,7 +22,10 @@ class LoginViewController: BaseViewController, Base {
     
     @IBOutlet weak var ToDoList: UILabel!
     
-    @IBOutlet weak var MessageLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    
+
     
     
     override func viewDidLoad() {
@@ -49,16 +52,31 @@ class LoginViewController: BaseViewController, Base {
         
         let credentialController = CredentialsController(credentials: Credentials(email: txtEmail.text, password: txtPassword.text))
         
-        return credentialController.validate() && credentialController.checkCredentials()
-            
+        do {
+            try credentialController.validate()
+            try credentialController.checkCredentials()
+            return true
+        } catch {
+            resultLabel.text = (error as! CredentialsError).description
+            return false
+        }
+        
         
         }
     
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    view.endEditing(true)
+    return true
+}
+}
+       
+          
+    
+    
     
    
-    
-  
-}
+
     
         
      

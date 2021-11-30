@@ -7,13 +7,9 @@
 
 import UIKit
 
-class RegistrationViewController: BaseViewController {
+class RegistrationViewController: BaseViewController, UITextFieldDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .hexToColor(hex: "aaaee9")
-        
-    }
+    
     
 
     @IBOutlet weak var txtEmail: UITextField!
@@ -25,10 +21,29 @@ class RegistrationViewController: BaseViewController {
     @IBAction func Registration(_ sender: UIButton) {
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .hexToColor(hex: "aaaee9")
+        txtEmail.delegate = self
+        txtPassword.delegate = self
+        
+    }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let creds =  CredentialsController(credentials: Credentials(email: txtEmail.text,
+                                                                    password: txtPassword.text))
         
-        return CredentialsController(credentials: Credentials(email: txtEmail.text, password: txtPassword.text)).validate()
-       }
+        do {
+            try creds.validate()
+            return true
+        } catch {
+            return false
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
+    }
 
 }

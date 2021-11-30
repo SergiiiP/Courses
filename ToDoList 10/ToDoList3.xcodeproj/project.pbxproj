@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F1B485B273B0A4E001FE75F /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B4859273B0A4E001FE75F /* TaskTableViewCell.swift */; };
 		3F1B485C273B0A4E001FE75F /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1B485A273B0A4E001FE75F /* TaskTableViewCell.xib */; };
+		3F3108D22755686000F4F288 /* CredentialsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3108D12755686000F4F288 /* CredentialsError.swift */; };
 		3F66B276272F0E0900552F68 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F66B275272F0E0900552F68 /* Credentials.swift */; };
 		3F66B27C272F23B200552F68 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F66B27B272F23B200552F68 /* Task.swift */; };
 		3F6D2392272B109D0091983D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D2391272B109D0091983D /* TaskListViewController.swift */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		3F1B4859273B0A4E001FE75F /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		3F1B485A273B0A4E001FE75F /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		3F3108D12755686000F4F288 /* CredentialsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsError.swift; sourceTree = "<group>"; };
 		3F66B275272F0E0900552F68 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		3F66B27B272F23B200552F68 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		3F6D2391272B109D0091983D /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F3108D02755681A00F4F288 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				3F3108D12755686000F4F288 /* CredentialsError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		3F398EBD273AE2F200ADE537 /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 		3F66B278272F1FE600552F68 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F3108D02755681A00F4F288 /* Errors */,
 				3FDAA85F27385B8100604A1B /* TaskController.swift */,
 				3FDC1524274ABEC7003646C5 /* CredentialsController.swift */,
 			);
@@ -402,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3108D22755686000F4F288 /* CredentialsError.swift in Sources */,
 				3FC15D822723477C00261F16 /* HEXToColor.swift in Sources */,
 				3FC15D8627234A2F00261F16 /* CustomView.swift in Sources */,
 				3FC15D7B2721EAE600261F16 /* LoginViewController.swift in Sources */,

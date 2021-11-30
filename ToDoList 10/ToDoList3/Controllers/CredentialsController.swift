@@ -15,27 +15,30 @@ class CredentialsController{
     
     let expectedCredentials: Credentials = Credentials.init(email: "test@gmail.com", password: "123456789")
     
-    func checkCredentials() -> Bool {
-        return credentials.email == expectedCredentials.email && credentials.password == credentials.password
+    func checkCredentials() throws {
+        if credentials.email == expectedCredentials.email && credentials.password == credentials.password{
+            
+        } else {throw CredentialsError.wrongCredentials}
     }
     
-    func validate() -> Bool {
+    func validate() throws {
         if let email = credentials.email,
            let password = credentials.password {
             if email.contains("@") {
                 if password.count > 8 {
                    print ("Right Format")
-                    return true
                 } else {
                     print ("Fail: password must be at least 8 symbols")
+                    throw CredentialsError.lowPassword
                 }
             } else {
                 print ("Fail: wrong email format")
+                throw CredentialsError.wrongEmail
             }
         } else {
             print ("Fail: empty fields")
+            throw CredentialsError.emptyFields
         }
-        return false
     }
     
     
