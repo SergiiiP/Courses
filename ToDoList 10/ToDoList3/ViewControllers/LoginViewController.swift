@@ -11,7 +11,7 @@ protocol Base{
     func prepareUI()
 }
 
-class LoginViewController: BaseViewController, Base {
+class LoginViewController: BaseViewController, Base, UITextFieldDelegate {
     
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registrationButton: UIButton!
@@ -30,7 +30,12 @@ class LoginViewController: BaseViewController, Base {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        prepareUI()
+        
+        loginButton.layer.cornerRadius = 12
+        
+        txtEmail.delegate = self
+        
+        txtPassword.delegate = self
     }
     
     func prepareUI() {
@@ -69,6 +74,17 @@ class LoginViewController: BaseViewController, Base {
     view.endEditing(true)
     return true
 }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        guard let isLoggedIn = UserDefaults.standard.value(forKey: "isLoggedIn") as? Bool else {return}
+        if isLoggedIn {
+            performSegue(withIdentifier: "fromLoginToTaskList", sender: self)
+        }
+    }
+    
+    
+    
 }
        
           

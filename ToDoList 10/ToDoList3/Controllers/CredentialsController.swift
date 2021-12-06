@@ -7,18 +7,13 @@
 
 import Foundation
 
-class CredentialsController{
-    var credentials: Credentials
-    init(credentials: Credentials){
-        self.credentials = credentials
-    }
+class CredentialsController {
     
+    var credentials: Credentials
     let expectedCredentials: Credentials = Credentials.init(email: "test@gmail.com", password: "123456789")
     
-    func checkCredentials() throws {
-        if credentials.email == expectedCredentials.email && credentials.password == credentials.password{
-            
-        } else {throw CredentialsError.wrongCredentials}
+    init(credentials: Credentials) {
+        self.credentials = credentials
     }
     
     func validate() throws {
@@ -26,20 +21,26 @@ class CredentialsController{
            let password = credentials.password {
             if email.contains("@") {
                 if password.count > 8 {
-                   print ("Right Format")
+                    print("Right Format")
+                    
                 } else {
-                    print ("Fail: password must be at least 8 symbols")
+                    print("Fail: password must be at least 8 symbols")
                     throw CredentialsError.lowPassword
                 }
             } else {
-                print ("Fail: wrong email format")
-                throw CredentialsError.wrongEmail
+                print("Fail: wrong email format")
+                throw CredentialsError.wrongEmailFormat
             }
         } else {
-            print ("Fail: empty fields")
+            print( "Fail: empty fields")
             throw CredentialsError.emptyFields
         }
     }
     
-    
+    func checkCredentials() throws {
+        if credentials.email == expectedCredentials.email &&
+            credentials.password == credentials.password {} else {
+                throw CredentialsError.wrongCredentials
+            }
+    }
 }

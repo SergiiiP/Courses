@@ -15,8 +15,8 @@ class TaskListViewController: BaseViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationController?.navigationBar.isHidden = true
+        
+        taskController.readFromLocalStorage()
         
         prepareTableView()
     }
@@ -47,4 +47,14 @@ class TaskListViewController: BaseViewController, UITableViewDataSource, UITable
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? AddTaskViewController {
+            vc.completion = { task in
+                self.taskController.add(new: task)
+                self.tableView.reloadData()
+            }
+        }
+    }
 }
+

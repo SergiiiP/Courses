@@ -32,6 +32,7 @@
 		3FC15D8B27234D3700261F16 /* BaseColorButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC15D8A27234D3700261F16 /* BaseColorButtonView.swift */; };
 		3FDAA86027385B8100604A1B /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAA85F27385B8100604A1B /* TaskController.swift */; };
 		3FDC1525274ABEC7003646C5 /* CredentialsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC1524274ABEC7003646C5 /* CredentialsController.swift */; };
+		3FFDEEE5275D361E00E86F78 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDEEE4275D361E00E86F78 /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		3FDAA85E2731C7E900604A1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		3FDAA85F27385B8100604A1B /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 		3FDC1524274ABEC7003646C5 /* CredentialsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsController.swift; sourceTree = "<group>"; };
+		3FFDEEE4275D361E00E86F78 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				3FC15D782721EAD300261F16 /* RegistrationViewController.swift */,
 				3FC15D7A2721EAE600261F16 /* LoginViewController.swift */,
 				3F6D2393272B33620091983D /* TaskViewController.swift */,
+				3FFDEEE4275D361E00E86F78 /* AddTaskViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				3FC15D772721EAAF00261F16 /* BaseViewController.swift in Sources */,
 				3FC15D422721E97500261F16 /* AppDelegate.swift in Sources */,
 				3FC15D8B27234D3700261F16 /* BaseColorButtonView.swift in Sources */,
+				3FFDEEE5275D361E00E86F78 /* AddTaskViewController.swift in Sources */,
 				3F66B276272F0E0900552F68 /* Credentials.swift in Sources */,
 				3F1B485B273B0A4E001FE75F /* TaskTableViewCell.swift in Sources */,
 				3FDC1525274ABEC7003646C5 /* CredentialsController.swift in Sources */,

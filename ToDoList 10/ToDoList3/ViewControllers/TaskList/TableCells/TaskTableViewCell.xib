@@ -16,36 +16,34 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdw-aT-dSg">
-                        <rect key="frame" x="16" y="7" width="91" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zc3-Vh-XE7">
-                        <rect key="frame" x="16" y="36" width="78" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="8" y="33" width="58" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tk-Cg-QZi">
-                        <rect key="frame" x="16" y="65" width="48" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdw-aT-dSg">
+                        <rect key="frame" x="8" y="10" width="67.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tk-Cg-QZi">
+                        <rect key="frame" x="8" y="55" width="305" height="41"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Fdw-aT-dSg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="9Yf-en-hoZ"/>
-                    <constraint firstItem="zc3-Vh-XE7" firstAttribute="top" secondItem="Fdw-aT-dSg" secondAttribute="bottom" constant="8" symbolic="YES" id="ERd-wc-0Vb"/>
-                    <constraint firstItem="zc3-Vh-XE7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Efw-yp-qId"/>
-                    <constraint firstItem="Fdw-aT-dSg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Nhf-pw-me3"/>
-                    <constraint firstAttribute="bottom" secondItem="6Tk-Cg-QZi" secondAttribute="bottom" constant="16" id="RCs-eE-Ke2"/>
-                    <constraint firstAttribute="trailing" secondItem="Fdw-aT-dSg" secondAttribute="trailing" constant="213" id="Txm-ZM-TFp"/>
-                    <constraint firstItem="6Tk-Cg-QZi" firstAttribute="top" secondItem="zc3-Vh-XE7" secondAttribute="bottom" constant="8" symbolic="YES" id="YM9-D7-rGn"/>
-                    <constraint firstAttribute="trailing" secondItem="6Tk-Cg-QZi" secondAttribute="trailing" constant="262.5" id="cj9-F0-uog"/>
-                    <constraint firstItem="6Tk-Cg-QZi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="pGv-41-SuA"/>
-                    <constraint firstItem="6Tk-Cg-QZi" firstAttribute="top" secondItem="zc3-Vh-XE7" secondAttribute="bottom" constant="8" symbolic="YES" id="zGL-Bb-qcv"/>
+                    <constraint firstAttribute="bottom" secondItem="6Tk-Cg-QZi" secondAttribute="bottom" constant="6" id="8sp-8R-xYd"/>
+                    <constraint firstItem="zc3-Vh-XE7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="GtC-1O-cnf"/>
+                    <constraint firstItem="6Tk-Cg-QZi" firstAttribute="top" secondItem="zc3-Vh-XE7" secondAttribute="bottom" constant="7.5" id="LFK-OO-lhO"/>
+                    <constraint firstItem="6Tk-Cg-QZi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="SOf-Vb-fng"/>
+                    <constraint firstItem="Fdw-aT-dSg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ubh-kq-LOr"/>
+                    <constraint firstItem="Fdw-aT-dSg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="mVG-V5-D5O"/>
+                    <constraint firstItem="zc3-Vh-XE7" firstAttribute="top" secondItem="Fdw-aT-dSg" secondAttribute="bottom" constant="8" symbolic="YES" id="rAk-fw-JOb"/>
+                    <constraint firstAttribute="trailing" secondItem="6Tk-Cg-QZi" secondAttribute="trailing" constant="7" id="ruV-j6-j47"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
