@@ -33,6 +33,8 @@ class LoginViewController: BaseViewController, Base, UITextFieldDelegate {
         
         loginButton.layer.cornerRadius = 12
         
+        registrationButton.layer.cornerRadius = 12
+        
         txtEmail.delegate = self
         
         txtPassword.delegate = self

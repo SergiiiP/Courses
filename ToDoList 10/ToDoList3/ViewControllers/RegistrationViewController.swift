@@ -21,9 +21,12 @@ class RegistrationViewController: BaseViewController, UITextFieldDelegate {
     @IBAction func Registration(_ sender: UIButton) {
     }
     
+    @IBOutlet weak var registrationButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .hexToColor(hex: "aaaee9")
+        registrationButton.layer.cornerRadius = 12
         txtEmail.delegate = self
         txtPassword.delegate = self
         
