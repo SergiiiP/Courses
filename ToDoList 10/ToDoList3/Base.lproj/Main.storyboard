@@ -198,7 +198,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5zc-Dd-pyp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oAb-H6-Lgf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -219,14 +219,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="J5Q-Uv-wSF">
-                                <rect key="frame" x="0.0" y="84" width="320" height="331"/>
+                                <rect key="frame" x="0.0" y="84" width="320" height="332"/>
                                 <color key="backgroundColor" red="0.1294117719" green="0.14509806040000001" blue="0.15294116739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="separatorColor" red="0.1294117719" green="0.14509806040000001" blue="0.15294116739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="0.1294117719" green="0.14509806040000001" blue="0.15294116739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexTrackingBackgroundColor" red="0.1294117719" green="0.14509806040000001" blue="0.15294116739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVB-iH-Vsa">
-                                <rect key="frame" x="298" y="415" width="22" height="31"/>
+                                <rect key="frame" x="225" y="416" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create">
                                     <color key="baseForegroundColor" red="0.41564239450000001" green="0.94328004119999997" blue="0.89783731560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -241,10 +241,10 @@
                         <constraints>
                             <constraint firstItem="gVB-iH-Vsa" firstAttribute="top" secondItem="J5Q-Uv-wSF" secondAttribute="bottom" id="6wx-SD-8ME"/>
                             <constraint firstItem="J5Q-Uv-wSF" firstAttribute="top" secondItem="mrx-62-ktB" secondAttribute="top" constant="40" id="FWB-PR-OCL"/>
-                            <constraint firstItem="gVB-iH-Vsa" firstAttribute="leading" secondItem="mrx-62-ktB" secondAttribute="leading" constant="298" id="Fg0-bH-FJl"/>
+                            <constraint firstItem="mrx-62-ktB" firstAttribute="trailing" secondItem="gVB-iH-Vsa" secondAttribute="trailing" constant="28" id="IQd-a9-fTf"/>
                             <constraint firstItem="J5Q-Uv-wSF" firstAttribute="leading" secondItem="mrx-62-ktB" secondAttribute="leading" id="Ml1-Bf-a4z"/>
+                            <constraint firstItem="mrx-62-ktB" firstAttribute="bottom" secondItem="gVB-iH-Vsa" secondAttribute="bottom" constant="33" id="NBE-8y-rK9"/>
                             <constraint firstItem="mrx-62-ktB" firstAttribute="trailing" secondItem="J5Q-Uv-wSF" secondAttribute="trailing" id="lu0-Y3-CXb"/>
-                            <constraint firstItem="mrx-62-ktB" firstAttribute="bottom" secondItem="gVB-iH-Vsa" secondAttribute="bottom" constant="34" id="mRn-TQ-FIm"/>
                             <constraint firstItem="mrx-62-ktB" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gVB-iH-Vsa" secondAttribute="trailing" id="yyp-aS-37R"/>
                         </constraints>
                     </view>
@@ -355,7 +355,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRU-O9-n5W">
-                                <rect key="frame" x="35" y="127" width="82" height="21"/>
+                                <rect key="frame" x="32" y="125.5" width="81.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.41564239450000001" green="0.94328004119999997" blue="0.89783731560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -368,9 +368,10 @@
                         <viewLayoutGuide key="safeArea" id="bJh-r9-FVv"/>
                         <color key="backgroundColor" red="0.1294117719" green="0.14509806040000001" blue="0.15294116739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="ZRU-O9-n5W" firstAttribute="top" secondItem="yyC-4r-4uD" secondAttribute="bottom" constant="36" id="5eL-wJ-E6o"/>
-                            <constraint firstItem="ThY-y3-5wV" firstAttribute="leading" secondItem="ZRU-O9-n5W" secondAttribute="leading" id="7ee-AR-Mca"/>
+                            <constraint firstItem="ThY-y3-5wV" firstAttribute="top" secondItem="ZRU-O9-n5W" secondAttribute="bottom" constant="87" id="Bjf-Wi-l51"/>
                             <constraint firstItem="yyC-4r-4uD" firstAttribute="leading" secondItem="bJh-r9-FVv" secondAttribute="leading" constant="35" id="C8p-cN-KCK"/>
+                            <constraint firstItem="ZRU-O9-n5W" firstAttribute="top" secondItem="yyC-4r-4uD" secondAttribute="bottom" constant="34.5" id="EKn-BY-DR9"/>
+                            <constraint firstItem="ZRU-O9-n5W" firstAttribute="leading" secondItem="bJh-r9-FVv" secondAttribute="leading" constant="32" id="FZn-Jq-inl"/>
                             <constraint firstItem="bJh-r9-FVv" firstAttribute="trailing" secondItem="yyC-4r-4uD" secondAttribute="trailing" constant="36" id="G4O-Ak-lIr"/>
                             <constraint firstItem="bJh-r9-FVv" firstAttribute="bottom" secondItem="ThY-y3-5wV" secondAttribute="bottom" constant="180" id="I3G-w3-ay4"/>
                             <constraint firstItem="ThY-y3-5wV" firstAttribute="leading" secondItem="yyC-4r-4uD" secondAttribute="leading" id="K5w-ds-y6g"/>
@@ -398,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAE-wQ-bdu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1311.5942028985507" y="1563.6160714285713"/>
+            <point key="canvasLocation" x="1310.625" y="1562.5"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
